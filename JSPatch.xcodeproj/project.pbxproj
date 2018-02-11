@@ -13,9 +13,15 @@
 		744857A0202D8B360086D4B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7448579F202D8B360086D4B5 /* Assets.xcassets */; };
 		744857A3202D8B360086D4B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 744857A1202D8B360086D4B5 /* LaunchScreen.storyboard */; };
 		744857A6202D8B360086D4B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 744857A5202D8B360086D4B5 /* main.m */; };
+		744857AD202D97F00086D4B5 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 744857AC202D97F00086D4B5 /* libz.tbd */; };
+		744857AF202D97F70086D4B5 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 744857AE202D97F70086D4B5 /* JavaScriptCore.framework */; };
+		744857B2202DD2E70086D4B5 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 744857B1202DD1820086D4B5 /* main.js */; };
+		827BFF278C58088A4DE2EFE4 /* libPods-JSPatch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78AFB9979D5F4103B5057238 /* libPods-JSPatch.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		19DBA43EEBFC45F646CEEDC7 /* Pods-JSPatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSPatch.release.xcconfig"; path = "Pods/Target Support Files/Pods-JSPatch/Pods-JSPatch.release.xcconfig"; sourceTree = "<group>"; };
+		5A556AE218FA87949F9D303A /* Pods-JSPatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSPatch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JSPatch/Pods-JSPatch.debug.xcconfig"; sourceTree = "<group>"; };
 		74485793202D8B360086D4B5 /* JSPatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSPatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74485796202D8B360086D4B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		74485797202D8B360086D4B5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +32,11 @@
 		744857A2202D8B360086D4B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		744857A4202D8B360086D4B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		744857A5202D8B360086D4B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		744857AC202D97F00086D4B5 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		744857AE202D97F70086D4B5 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		744857B0202D9BFE0086D4B5 /* JSPatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JSPatch.entitlements; sourceTree = "<group>"; };
+		744857B1202DD1820086D4B5 /* main.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
+		78AFB9979D5F4103B5057238 /* libPods-JSPatch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JSPatch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +44,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				744857AF202D97F70086D4B5 /* JavaScriptCore.framework in Frameworks */,
+				744857AD202D97F00086D4B5 /* libz.tbd in Frameworks */,
+				827BFF278C58088A4DE2EFE4 /* libPods-JSPatch.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0162083827F083E11FA9BAEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				744857AE202D97F70086D4B5 /* JavaScriptCore.framework */,
+				744857AC202D97F00086D4B5 /* libz.tbd */,
+				78AFB9979D5F4103B5057238 /* libPods-JSPatch.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7448578A202D8B360086D4B5 = {
 			isa = PBXGroup;
 			children = (
 				74485795202D8B360086D4B5 /* JSPatch */,
 				74485794202D8B360086D4B5 /* Products */,
+				76DECDC94F75477A6EF99630 /* Pods */,
+				0162083827F083E11FA9BAEA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,8 +84,10 @@
 		74485795202D8B360086D4B5 /* JSPatch */ = {
 			isa = PBXGroup;
 			children = (
+				744857B0202D9BFE0086D4B5 /* JSPatch.entitlements */,
 				74485796202D8B360086D4B5 /* AppDelegate.h */,
 				74485797202D8B360086D4B5 /* AppDelegate.m */,
+				744857B1202DD1820086D4B5 /* main.js */,
 				74485799202D8B360086D4B5 /* ViewController.h */,
 				7448579A202D8B360086D4B5 /* ViewController.m */,
 				7448579C202D8B360086D4B5 /* Main.storyboard */,
@@ -71,6 +99,15 @@
 			path = JSPatch;
 			sourceTree = "<group>";
 		};
+		76DECDC94F75477A6EF99630 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A556AE218FA87949F9D303A /* Pods-JSPatch.debug.xcconfig */,
+				19DBA43EEBFC45F646CEEDC7 /* Pods-JSPatch.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +115,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 744857A9202D8B360086D4B5 /* Build configuration list for PBXNativeTarget "JSPatch" */;
 			buildPhases = (
+				6D4877FCD1432788AA2D2182 /* [CP] Check Pods Manifest.lock */,
 				7448578F202D8B360086D4B5 /* Sources */,
 				74485790202D8B360086D4B5 /* Frameworks */,
 				74485791202D8B360086D4B5 /* Resources */,
+				CB7061D423110D65B49822E9 /* [CP] Embed Pods Frameworks */,
+				7CF7ED5CC89C44288CC6D8D3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -103,6 +143,11 @@
 					74485792202D8B360086D4B5 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -132,10 +177,65 @@
 				744857A3202D8B360086D4B5 /* LaunchScreen.storyboard in Resources */,
 				744857A0202D8B360086D4B5 /* Assets.xcassets in Resources */,
 				7448579E202D8B360086D4B5 /* Main.storyboard in Resources */,
+				744857B2202DD2E70086D4B5 /* main.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D4877FCD1432788AA2D2182 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JSPatch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CF7ED5CC89C44288CC6D8D3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JSPatch/Pods-JSPatch-resources.sh",
+				"${PODS_ROOT}/JSPatch/JSPatch/JSPatch.js",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JSPatch/Pods-JSPatch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB7061D423110D65B49822E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JSPatch/Pods-JSPatch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7448578F202D8B360086D4B5 /* Sources */ = {
@@ -276,8 +376,10 @@
 		};
 		744857AA202D8B360086D4B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A556AE218FA87949F9D303A /* Pods-JSPatch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = JSPatch/JSPatch.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2X59K3482S;
 				INFOPLIST_FILE = JSPatch/Info.plist;
@@ -290,8 +392,10 @@
 		};
 		744857AB202D8B360086D4B5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19DBA43EEBFC45F646CEEDC7 /* Pods-JSPatch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = JSPatch/JSPatch.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2X59K3482S;
 				INFOPLIST_FILE = JSPatch/Info.plist;

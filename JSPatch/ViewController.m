@@ -16,7 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    //随便加一个label,一会儿我会去JSPatch平台提交
+    UILabel *lb = [[UILabel alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
+    lb.text = @"JSPatch";
+    lb.textColor = [UIColor grayColor];
+    lb.backgroundColor = [UIColor redColor];
+    [self.view addSubview:lb];
 }
 
 
